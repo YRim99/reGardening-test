@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">reGardening-test</string>
+    <string name="book_note">책, 노트</string>
+    <string name="newspaper">신문지</string>
+    <string name="box">상자</string>
+    <string name="note_explanation">코팅된 겉면, 스프링 등을 제거한 후 배출해 주세요.</string>
+    <string name="newspaper_explanation">반듯하게 쌓고 끈으로 묶어서 배출해 주세요.</string>
+    <string name="box_explanation">상자에 붙어 있는 테이프, 핀, 운송장 드을 제거한 후 압착하여 배출해 주세요.</string>
 </resources>
