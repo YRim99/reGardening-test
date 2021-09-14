@@ -1,111 +1,136 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".paper">
+    tools:context=".paper" >
 
-
-    <ImageView
-        android:id="@+id/imageView4"
-        android:layout_width="83dp"
-        android:layout_height="86dp"
-        android:layout_marginStart="48dp"
-        android:layout_marginTop="268dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/newspaper" />
-
-    <ImageView
-        android:id="@+id/imageView3"
-        android:layout_width="79dp"
-        android:layout_height="77dp"
-        android:layout_marginStart="52dp"
-        android:layout_marginBottom="240dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@drawable/box"
-        android:contentDescription="TODO" />
-
-    <ImageView
-        android:id="@+id/imageView5"
-        android:layout_width="77dp"
-        android:layout_height="83dp"
-        android:layout_marginStart="48dp"
-        android:layout_marginTop="124dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/note" />
-
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="82dp"
-        android:layout_height="27dp"
-        android:layout_marginTop="87dp"
-        android:text="@string/book_note"
-        android:textAppearance="@style/TextAppearance.AppCompat.Large"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.148"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="56dp"
-        android:layout_marginTop="19dp"
-        android:text="@string/newspaper"
-        android:textAppearance="@style/TextAppearance.AppCompat.Large"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView5" />
+        android:orientation="vertical"
+        android:fillViewport="true"
+        android:padding="30dp">
 
-    <TextView
-        android:id="@+id/textView3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="68dp"
-        android:layout_marginTop="16dp"
-        android:text="@string/box"
-        android:textAppearance="@style/TextAppearance.AppCompat.Large"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView4" />
 
-    <TextView
-        android:id="@+id/textView4"
-        android:layout_width="192dp"
-        android:layout_height="74dp"
-        android:layout_marginTop="140dp"
-        android:text="@string/note_explanation"
-        android:textAppearance="@style/TextAppearance.AppCompat.Large"
-        android:textSize="18sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/imageView5"
-        app:layout_constraintTop_toTopOf="parent" />
+        <TextView
+            android:id="@+id/paper_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="17dp"
+            android:text="종이류"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large" />
 
-    <TextView
-        android:id="@+id/textView5"
-        android:layout_width="214dp"
-        android:layout_height="82dp"
-        android:layout_marginTop="272dp"
-        android:text="@string/newspaper_explanation"
-        android:textAppearance="@style/TextAppearance.AppCompat.Large"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.652"
-        app:layout_constraintStart_toEndOf="@+id/imageView5"
-        app:layout_constraintTop_toTopOf="parent" />
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="87dp"
+            android:layout_height="71dp"
+            app:srcCompat="@drawable/paper_1" />
 
-    <TextView
-        android:id="@+id/textView6"
-        android:layout_width="242dp"
-        android:layout_height="99dp"
-        android:layout_marginTop="392dp"
-        android:text="@string/box_explanation"
-        android:textAppearance="@style/TextAppearance.AppCompat.Large"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.636"
-        app:layout_constraintStart_toEndOf="@+id/imageView5"
-        app:layout_constraintTop_toTopOf="parent" />
+        <TextView
+            android:id="@+id/book"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="책, 노트"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textSize="16sp" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="96dp"
+            android:layout_height="92dp"
+            android:layout_margin="17dp"
+            app:srcCompat="@drawable/note" />
+
+        <TextView
+            android:id="@+id/book_explaneation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="코팅된 겉면, 스프링 등을 제거한 후 배출해 주세요." />
+
+        <ImageView
+            android:id="@+id/box_1"
+            android:layout_width="96dp"
+            android:layout_height="92dp"
+            android:layout_margin="17dp"
+            app:srcCompat="@drawable/box" />
+
+        <TextView
+            android:id="@+id/box_explaneation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="상자에 붙어 있는 테이프, 핀, 둥송장 등을 제거한 후 압착하여 배출해 주세요." />
+
+        <TextView
+            android:id="@+id/newspaper"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="신문지"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="96dp"
+            android:layout_height="92dp"
+            android:layout_margin="17dp"
+            app:srcCompat="@drawable/newspaper" />
+
+        <TextView
+            android:id="@+id/newspaper_wxplanation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="반듯하게 쌓고 끈으로 묶어서 배출해 주세요." />
+
+        <TextView
+            android:id="@+id/paper_"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="17dp"
+            android:text="종이팩"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+        <ImageView
+            android:id="@+id/imageView6"
+            android:layout_width="84dp"
+            android:layout_height="79dp"
+            app:srcCompat="@drawable/paper_2" />
+
+        <TextView
+            android:id="@+id/papercup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="우유팩, 종이컵"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:id="@+id/mlikpack"
+            android:layout_width="96dp"
+            android:layout_height="92dp"
+            android:layout_margin="17dp"
+            app:srcCompat="@drawable/milk" />
+
+        <TextView
+            android:id="@+id/milkpack_wxplanation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="내용물을 씻어내고 넓고 얇게 압착하여 종이팩 전용 수거함에 배출해 주세요." />
+
+        <TextView
+            android:id="@+id/paper_3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="17dp"
+            android:text="참고"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+        <TextView
+            android:id="@+id/milkpack_wxplanation2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="파쇄지, 명함은 일반 쓰레기로 배출해 주세요." />
+
+    </LinearLayout>
+</ScrollView>
