@@ -8,13 +8,10 @@ import android.widget.TextView
 
 class MainActivity : AppCompatActivity() {
     lateinit var main_click : TextView
-    lateinit var imageView : ImageView
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-
-        imageView = findViewById(R.id.imageView)
 
         main_click = findViewById(R.id.main_click)
         main_click.setOnClickListener {
