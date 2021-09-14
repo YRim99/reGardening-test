@@ -9,6 +9,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.ReGardeningtest">
+        <activity android:name=".glass"></activity>
+        <activity android:name=".plastic" />
+        <activity android:name=".vinil" />
         <activity android:name=".paper" />
         <activity android:name=".collection" />
         <activity android:name=".MainActivity">

@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".paper" >
+    tools:context=".plastic">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -15,24 +15,24 @@
 
 
         <TextView
-            android:id="@+id/paper_1"
+            android:id="@+id/plastic_1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="17dp"
-            android:text="종이류"
+            android:text="플라스틱"
             android:textAppearance="@style/TextAppearance.AppCompat.Large" />
 
         <ImageView
-            android:id="@+id/imageView5"
+            android:id="@+id/plastic_2"
             android:layout_width="87dp"
             android:layout_height="71dp"
-            app:srcCompat="@drawable/paper_1" />
+            app:srcCompat="@drawable/plastic" />
 
         <TextView
-            android:id="@+id/book"
+            android:id="@+id/vinil_3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="책, 노트"
+            android:text="비닐"
             android:textAppearance="@style/TextAppearance.AppCompat.Large"
             android:textSize="16sp" />
 
@@ -41,85 +41,68 @@
             android:layout_width="96dp"
             android:layout_height="92dp"
             android:layout_margin="17dp"
-            app:srcCompat="@drawable/note" />
+            app:srcCompat="@drawable/plasic_1" />
 
         <TextView
-            android:id="@+id/book_explaneation"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="코팅된 겉면, 스프링 등을 제거한 후 배출해 주세요." />
-
-        <ImageView
-            android:id="@+id/box_1"
-            android:layout_width="96dp"
-            android:layout_height="92dp"
-            android:layout_margin="17dp"
-            app:srcCompat="@drawable/box" />
-
-        <TextView
-            android:id="@+id/box_explaneation"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="상자에 붙어 있는 테이프, 핀, 둥송장 등을 제거한 후 압착하여 배출해 주세요." />
-
-        <TextView
-            android:id="@+id/newspaper"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="신문지"
-            android:textAppearance="@style/TextAppearance.AppCompat.Large"
-            android:textSize="16sp" />
-
-        <ImageView
-            android:id="@+id/imageView2"
-            android:layout_width="96dp"
-            android:layout_height="92dp"
-            android:layout_margin="17dp"
-            app:srcCompat="@drawable/newspaper" />
-
-        <TextView
-            android:id="@+id/newspaper_wxplanation"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="반듯하게 쌓고 끈으로 묶어서 배출해 주세요." />
-
-        <TextView
-            android:id="@+id/paper_"
+            android:id="@+id/plastic_explanation"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="17dp"
-            android:text="종이팩"
+            android:text="이물질을 깨끗이 제거한 후 배출해 주세요." />
+
+        <TextView
+            android:id="@+id/plastic_explanation1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="17dp"
+            android:text="플라스틱 중 PVC, OTHER라고 표기된 제품은 일반 쓰레기로 배출해 주세요." />
+
+        <TextView
+            android:id="@+id/plastic_explanation2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="17dp"
+            android:text="본체와 재질이 다른 부속품들은 제거하여 배출해 주세요." />
+        <TextView
+            android:id="@+id/plastic_3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="17dp"
+            android:text="페트류"
             android:textAppearance="@style/TextAppearance.AppCompat.Large" />
 
         <ImageView
-            android:id="@+id/imageView6"
-            android:layout_width="84dp"
-            android:layout_height="79dp"
-            app:srcCompat="@drawable/paper_2" />
-
+            android:id="@+id/plastic_4"
+            android:layout_width="87dp"
+            android:layout_height="71dp"
+            app:srcCompat="@drawable/pet1" />
         <TextView
-            android:id="@+id/papercup"
+            android:id="@+id/plastic_5"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="우유팩, 종이컵"
+            android:text="페트병"
             android:textAppearance="@style/TextAppearance.AppCompat.Large"
             android:textSize="16sp" />
-
         <ImageView
-            android:id="@+id/mlikpack"
+            android:id="@+id/imageView1"
             android:layout_width="96dp"
             android:layout_height="92dp"
             android:layout_margin="17dp"
-            app:srcCompat="@drawable/milk" />
-
+            app:srcCompat="@drawable/pet" />
         <TextView
-            android:id="@+id/milkpack_eplanation"
+            android:id="@+id/plastic_explanation3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="내용물을 씻어내고 넓고 얇게 압착하여 종이팩 전용 수거함에 배출해 주세요." />
-
+            android:layout_margin="17dp"
+            android:text="내용물, 라벨 등을 제거한 후 배출해 주세요." />
         <TextView
-            android:id="@+id/paper_3"
+            android:id="@+id/plastic_explanation4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="17dp"
+            android:text="투명 페트라면 투명 페트 전용 수거함에 배출해 주세요." />
+        <TextView
+            android:id="@+id/explanaiton"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="17dp"
@@ -127,10 +110,11 @@
             android:textAppearance="@style/TextAppearance.AppCompat.Large" />
 
         <TextView
-            android:id="@+id/explanation"
+            android:id="@+id/explanation2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="파쇄지, 명함은 일반 쓰레기로 배출해 주세요." />
+            android:layout_margin="17dp"
+            android:text="크기가 작은 일회용 숟가락, 빨대 등은 일반 쓰레기로 배출해 주세요." />
 
     </LinearLayout>
 </ScrollView>
