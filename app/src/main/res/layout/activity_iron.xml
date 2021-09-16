@@ -47,7 +47,7 @@
                 app:layout_constraintTop_toTopOf="parent">
 
                 <ImageView
-                    android:id="@+id/iron_2"
+                    android:id="@+id/iron"
                     android:layout_width="87dp"
                     android:layout_height="71dp"
                     app:srcCompat="@drawable/iron_al" />
