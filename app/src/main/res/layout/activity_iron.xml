@@ -68,7 +68,6 @@
             </LinearLayout>
         </androidx.constraintlayout.widget.ConstraintLayout>
 
-
         <TextView
             android:id="@+id/iron_1"
             android:layout_width="match_parent"
