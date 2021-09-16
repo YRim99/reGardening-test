@@ -1,6 +1,7 @@
 package com.example.regardening_test
 
 import android.animation.ObjectAnimator
+import android.animation.ValueAnimator.REVERSE
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -19,8 +20,10 @@ class MainActivity : AppCompatActivity() {
 
         var background : ImageView = findViewById(R.id.imageView)
 
-        ObjectAnimator.ofFloat(background, "translationX", 100f).apply {
-            duration = 2000
+        ObjectAnimator.ofFloat(background, "translationX", -700f).apply {
+            duration = 5000
+            repeatCount = -1
+            repeatMode = REVERSE
             start()
         }
 
