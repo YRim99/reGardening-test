@@ -1,54 +1,107 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<LinearLayout xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".plastic">
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_marginStart="30dp"
+    android:layout_marginTop="30dp"
+    android:layout_marginEnd="30dp"
+    android:layout_marginBottom="30dp"
+    android:orientation="vertical">
+
+    <ImageButton
+        android:id="@+id/back"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:width="50dp"
+        android:height="50dp"
+        android:background="#00ff0000"
+        android:src="@drawable/back_arrow"
+        android:scaleType="centerInside"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".paper">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:fillViewport="true"
-        android:padding="30dp">
+        android:fillViewport="true">
 
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="182dp"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <ImageView
+                    android:id="@+id/plastic_2"
+                    android:layout_width="87dp"
+                    android:layout_height="71dp"
+                    app:srcCompat="@drawable/plastic" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/plastic_1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="플라스틱"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                        android:textSize="24sp"
+                        android:gravity="center"/>
+                </LinearLayout>
+            </LinearLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
 
         <TextView
-            android:id="@+id/plastic_1"
+            android:id="@+id/plastic"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="17dp"
             android:text="플라스틱"
-            android:textAppearance="@style/TextAppearance.AppCompat.Large" />
-
-        <ImageView
-            android:id="@+id/plastic_2"
-            android:layout_width="87dp"
-            android:layout_height="71dp"
-            app:srcCompat="@drawable/plastic" />
-
-        <TextView
-            android:id="@+id/vinil_3"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="비닐"
             android:textAppearance="@style/TextAppearance.AppCompat.Large"
-            android:textSize="16sp" />
+            android:textSize="20sp" />
 
-        <ImageView
-            android:id="@+id/imageView"
-            android:layout_width="96dp"
-            android:layout_height="92dp"
-            android:layout_margin="17dp"
-            app:srcCompat="@drawable/plasic_1" />
-
-        <TextView
-            android:id="@+id/plastic_explanation"
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="17dp"
-            android:text="이물질을 깨끗이 제거한 후 배출해 주세요." />
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="96dp"
+                android:layout_height="92dp"
+                android:layout_margin="17dp"
+                app:srcCompat="@drawable/plasic_1" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/plastic_explaneation"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="17dp"
+                    android:text="이물질을 깨끗히 제거한 후
+                                  배출해주세요."
+                    android:textSize="14sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:layout_editor_absoluteX="18dp" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </LinearLayout>
 
         <TextView
             android:id="@+id/plastic_explanation1"
@@ -63,51 +116,96 @@
             android:layout_height="wrap_content"
             android:layout_margin="17dp"
             android:text="본체와 재질이 다른 부속품들은 제거하여 배출해 주세요." />
-        <TextView
-            android:id="@+id/plastic_3"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="17dp"
-            android:text="페트류"
-            android:textAppearance="@style/TextAppearance.AppCompat.Large" />
 
-        <ImageView
-            android:id="@+id/plastic_4"
-            android:layout_width="87dp"
-            android:layout_height="71dp"
-            app:srcCompat="@drawable/pet1" />
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="182dp"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <ImageView
+                    android:id="@+id/plastic_3"
+                    android:layout_width="87dp"
+                    android:layout_height="71dp"
+                    app:srcCompat="@drawable/pet1" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/plastic_4"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="페트류"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                        android:textSize="26sp"
+                        android:gravity="center"/>
+                </LinearLayout>
+            </LinearLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
         <TextView
             android:id="@+id/plastic_5"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="페트병"
             android:textAppearance="@style/TextAppearance.AppCompat.Large"
-            android:textSize="16sp" />
-        <ImageView
-            android:id="@+id/imageView1"
-            android:layout_width="96dp"
-            android:layout_height="92dp"
-            android:layout_margin="17dp"
-            app:srcCompat="@drawable/pet" />
-        <TextView
-            android:id="@+id/plastic_explanation3"
+            android:textSize="20sp" />
+
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="17dp"
-            android:text="내용물, 라벨 등을 제거한 후 배출해 주세요." />
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="96dp"
+                android:layout_height="92dp"
+                android:layout_margin="17dp"
+                app:srcCompat="@drawable/pet" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/plastic_explaneation3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="17dp"
+                    android:text="내용물, 라벨 등을 제거한 후
+                                  배출해주세요."
+                    android:textSize="14sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:layout_editor_absoluteX="18dp" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </LinearLayout>
+
+
         <TextView
             android:id="@+id/plastic_explanation4"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="17dp"
             android:text="투명 페트라면 투명 페트 전용 수거함에 배출해 주세요." />
+
         <TextView
-            android:id="@+id/explanaiton"
+            android:id="@+id/paper_3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="17dp"
             android:text="참고"
-            android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+            android:layout_marginTop="17dp"
+            android:layout_marginBottom="17dp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textSize="20sp" />
 
         <TextView
             android:id="@+id/explanation2"
@@ -118,3 +216,4 @@
 
     </LinearLayout>
 </ScrollView>
+</LinearLayout>
