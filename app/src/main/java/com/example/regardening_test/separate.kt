@@ -7,6 +7,8 @@ import android.widget.Button
 
 class separate : AppCompatActivity() {
     lateinit var btn_vinil : Button
+
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_separate)
