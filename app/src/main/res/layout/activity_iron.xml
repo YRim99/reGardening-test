@@ -53,8 +53,8 @@
                     app:srcCompat="@drawable/iron_al" />
 
                 <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content">
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
 
                     <TextView
                         android:id="@+id/iron_3"
@@ -62,86 +62,162 @@
                         android:layout_height="match_parent"
                         android:text="캔류"
                         android:textAppearance="@style/TextAppearance.AppCompat.Large"
-                        android:textSize="26sp" />
+                        android:textSize="26sp"
+                        android:gravity="center"/>
                 </LinearLayout>
             </LinearLayout>
         </androidx.constraintlayout.widget.ConstraintLayout>
+
 
         <TextView
             android:id="@+id/iron_1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="17dp"
-            android:text="금속캔"
-            android:textAppearance="@style/TextAppearance.AppCompat.Large" />
-
-
-        <ImageView
-            android:id="@+id/imageView"
-            android:layout_width="96dp"
-            android:layout_height="92dp"
-            android:layout_margin="17dp"
-            app:srcCompat="@drawable/can" />
-
-        <TextView
-            android:id="@+id/plastic_explanation"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="17dp"
-            android:text="내용물을 비우고 물로 헹구어 배출해 주세요." />
-
-        <ImageView
-            android:id="@+id/imageView2"
-            android:layout_width="96dp"
-            android:layout_height="92dp"
-            android:layout_margin="17dp"
-            app:srcCompat="@drawable/spray" />
-
-        <TextView
-            android:id="@+id/glass_explanation2"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="17dp"
-            android:text="가스통이나 살충제 등은 스프레이 용기에 구멍을 내서 배출해 주세요." />
-        <TextView
-            android:id="@+id/plastic_3"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="17dp"
-            android:text="고철류"
-            android:textAppearance="@style/TextAppearance.AppCompat.Large" />
-
-        <ImageView
-            android:id="@+id/plastic_4"
-            android:layout_width="87dp"
-            android:layout_height="71dp"
-            app:srcCompat="@drawable/iron" />
-        <TextView
-            android:id="@+id/plastic_5"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="고철(공기구, 못), 비철금속(알미늄, 스텐)"
+            android:text="알루미늄 캔"
             android:textAppearance="@style/TextAppearance.AppCompat.Large"
-            android:textSize="16sp" />
+            android:textSize="20sp" />
 
-        <ImageView
-            android:id="@+id/imageView1"
-            android:layout_width="64dp"
-            android:layout_height="59dp"
-            android:layout_margin="17dp"
-            app:srcCompat="@drawable/pegs" />
-        <ImageView
-            android:id="@+id/imageView3"
-            android:layout_width="64dp"
-            android:layout_height="59dp"
-            android:layout_margin="17dp"
-            app:srcCompat="@drawable/pot" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="96dp"
+                android:layout_height="92dp"
+                android:layout_margin="17dp"
+                app:srcCompat="@drawable/can" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/plastic_explaneation"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="17dp"
+                    android:text="내용물을 비우고 물로 헹구어
+                                  배출해 주세요."
+                    android:textSize="14sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:layout_editor_absoluteX="18dp" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="96dp"
+                android:layout_height="92dp"
+                android:layout_margin="17dp"
+                app:srcCompat="@drawable/spray" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/plastic_explaneation2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="17dp"
+                    android:text="가스통이나 살충제 등은
+                                  스프레이 용기에 구멍을 내서
+                                  배출해 주세요."
+                    android:textSize="14sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:layout_editor_absoluteX="18dp" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </LinearLayout>
+
         <TextView
-            android:id="@+id/glass_explanation3"
+            android:id="@+id/iron_2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="17dp"
-            android:text="고철, 비철금속류도 캔류에 배출해 주세요." />
+            android:text="고철류"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textSize="20sp" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="182dp"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <ImageView
+                    android:id="@+id/iron_4"
+                    android:layout_width="87dp"
+                    android:layout_height="71dp"
+                    app:srcCompat="@drawable/iron" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/iron_5"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="고철(공기구, 못),
+                                      비철금속(알미늄, 스텐)"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                        android:textSize="12sp"
+                        android:gravity="center"/>
+                </LinearLayout>
+            </LinearLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="96dp"
+                android:layout_height="92dp"
+                android:layout_margin="17dp"
+                app:srcCompat="@drawable/pegs" />
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="96dp"
+        android:layout_height="92dp"
+        android:layout_margin="17dp"
+        app:srcCompat="@drawable/pot" />
+</LinearLayout>
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/plastic_explaneation3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="17dp"
+                    android:text="고철, 비철금속 류도 캔류에
+                                  배출해 주세요."
+                    android:textSize="14sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:layout_editor_absoluteX="18dp" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </LinearLayout>
+
 
     </LinearLayout>
     </ScrollView>

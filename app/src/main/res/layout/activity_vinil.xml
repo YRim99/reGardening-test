@@ -54,12 +54,12 @@
     android:layout_height="match_parent">
                 <TextView
                     android:id="@+id/vinil_1"
-                    android:layout_width="83dp"
-                    android:layout_height="wrap_content"
-                    android:layout_margin="17dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
                     android:text="비닐류"
                     android:textAppearance="@style/TextAppearance.AppCompat.Large"
-                    android:textSize="26sp" />
+                    android:textSize="26sp"
+                    android:gravity="center"/>
 </LinearLayout>
             </LinearLayout>
         </androidx.constraintlayout.widget.ConstraintLayout>
