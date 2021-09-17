@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     tools:context=".paper" >
 
-    <androidx.constraintlayout.widget.ConstraintLayout
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
@@ -95,9 +95,7 @@
             android:id="@+id/imageView6"
             android:layout_width="84dp"
             android:layout_height="79dp"
-            app:srcCompat="@drawable/paper_2"
-            tools:layout_editor_absoluteX="33dp"
-            tools:layout_editor_absoluteY="157dp" />
+            app:srcCompat="@drawable/paper_2" />
 
         <TextView
             android:id="@+id/papercup"
@@ -112,10 +110,6 @@
             android:layout_width="96dp"
             android:layout_height="92dp"
             android:layout_margin="17dp"
-            android:layout_marginEnd="41dp"
-            android:layout_marginBottom="30dp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
             app:srcCompat="@drawable/milk" />
 
         <TextView
@@ -136,10 +130,7 @@
             android:id="@+id/explanation"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginEnd="16dp"
-            android:text="파쇄지, 명함은 일반 쓰레기로 배출해 주세요."
-            app:layout_constraintEnd_toEndOf="parent"
-            tools:layout_editor_absoluteY="138dp" />
+            android:text="파쇄지, 명함은 일반 쓰레기로 배출해 주세요." />
 
-    </androidx.constraintlayout.widget.ConstraintLayout>
+    </LinearLayout>
 </ScrollView>

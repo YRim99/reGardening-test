@@ -19,7 +19,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="17dp"
-            android:text="플라스틱류"
+            android:text="플라스틱"
             android:textAppearance="@style/TextAppearance.AppCompat.Large" />
 
         <ImageView
@@ -29,19 +29,19 @@
             app:srcCompat="@drawable/plastic" />
 
         <TextView
-            android:id="@+id/plastic_3"
+            android:id="@+id/vinil_3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="플라스틱"
+            android:text="비닐"
             android:textAppearance="@style/TextAppearance.AppCompat.Large"
             android:textSize="16sp" />
 
         <ImageView
-            android:id="@+id/plasticimage"
+            android:id="@+id/imageView"
             android:layout_width="96dp"
             android:layout_height="92dp"
             android:layout_margin="17dp"
-            app:srcCompat="@drawable/plastic_1" />
+            app:srcCompat="@drawable/plasic_1" />
 
         <TextView
             android:id="@+id/plastic_explanation"
@@ -64,7 +64,7 @@
             android:layout_margin="17dp"
             android:text="본체와 재질이 다른 부속품들은 제거하여 배출해 주세요." />
         <TextView
-            android:id="@+id/plastic_4"
+            android:id="@+id/plastic_3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="17dp"
@@ -72,19 +72,19 @@
             android:textAppearance="@style/TextAppearance.AppCompat.Large" />
 
         <ImageView
-            android:id="@+id/petimage"
+            android:id="@+id/plastic_4"
             android:layout_width="87dp"
             android:layout_height="71dp"
             app:srcCompat="@drawable/pet1" />
         <TextView
-            android:id="@+id/plastic_6"
+            android:id="@+id/plastic_5"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="페트병"
             android:textAppearance="@style/TextAppearance.AppCompat.Large"
             android:textSize="16sp" />
         <ImageView
-            android:id="@+id/plasticbottle"
+            android:id="@+id/imageView1"
             android:layout_width="96dp"
             android:layout_height="92dp"
             android:layout_margin="17dp"

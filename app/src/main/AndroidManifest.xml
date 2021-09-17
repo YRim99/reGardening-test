@@ -9,14 +9,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.ReGardeningtest">
-        <activity android:name=".separate"></activity>
-        <activity android:name=".styrofoam"></activity>
-        <activity android:name=".iron" />
-        <activity android:name=".glass" />
-        <activity android:name=".plastic" />
-        <activity android:name=".vinil" />
-        <activity android:name=".paper" />
-        <activity android:name=".collection" />
+        <activity android:name=".nonfire"></activity>
+        <activity android:name=".private1" />
+        <activity android:name=".Home" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
