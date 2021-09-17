@@ -90,7 +90,7 @@
             </LinearLayout>
 
             <TextView
-                android:id="@+id/private_battery_ex2"
+                android:id="@+id/private_battery_ex3"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="17dp"
