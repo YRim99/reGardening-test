@@ -1,10 +1,29 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<LinearLayout xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".glass">
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_marginStart="30dp"
+    android:layout_marginTop="30dp"
+    android:layout_marginEnd="30dp"
+    android:layout_marginBottom="30dp"
+    android:orientation="vertical">
+
+    <ImageButton
+        android:id="@+id/back"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:width="50dp"
+        android:height="50dp"
+        android:background="#00ff0000"
+        android:src="@drawable/back_arrow"
+        android:scaleType="centerInside"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".glass">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -14,19 +33,40 @@
         android:padding="30dp">
 
 
-        <TextView
-            android:id="@+id/galss_1"
+        <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="17dp"
-            android:text="유리병류"
-            android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+            android:layout_height="match_parent">
 
-        <ImageView
-            android:id="@+id/glass_2"
-            android:layout_width="87dp"
-            android:layout_height="71dp"
-            app:srcCompat="@drawable/glass" />
+            <LinearLayout
+                android:layout_width="182dp"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <ImageView
+                    android:id="@+id/glass_1"
+                    android:layout_width="87dp"
+                    android:layout_height="71dp"
+                    app:srcCompat="@drawable/glass" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/glass_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="유리병류"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                        android:textSize="24sp"
+                        android:gravity="center"/>
+                </LinearLayout>
+            </LinearLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
 
         <TextView
             android:id="@+id/glass_3"
@@ -34,21 +74,35 @@
             android:layout_height="wrap_content"
             android:text="유리병"
             android:textAppearance="@style/TextAppearance.AppCompat.Large"
-            android:textSize="16sp" />
+            android:textSize="20sp" />
 
-        <ImageView
-            android:id="@+id/bottle"
-            android:layout_width="96dp"
-            android:layout_height="92dp"
-            android:layout_margin="17dp"
-            app:srcCompat="@drawable/bottle" />
-
-        <TextView
-            android:id="@+id/glass_explanation"
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="17dp"
-            android:text="내용물을 물로 헹구어 이물질을 제거한 후 배출해 주세요." />
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/bottle"
+                android:layout_width="96dp"
+                android:layout_height="92dp"
+                android:layout_margin="17dp"
+                app:srcCompat="@drawable/bottle" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/glass_explanation"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="17dp"
+                    android:text="내용물을 물로 헹구어 이물질을 제거한 후 배출해주세요."
+                    android:textSize="14sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:layout_editor_absoluteX="18dp" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </LinearLayout>
 
         <TextView
             android:id="@+id/glass_explanation2"
@@ -56,46 +110,91 @@
             android:layout_height="wrap_content"
             android:layout_margin="17dp"
             android:text="유리병과 재질이 다른 부속품들은 제거하여 배출해 주세요." />
-        <TextView
-            android:id="@+id/glass_4"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="17dp"
-            android:text="보증금병"
-            android:textAppearance="@style/TextAppearance.AppCompat.Large" />
 
-        <ImageView
-            android:id="@+id/glass_5"
-            android:layout_width="87dp"
-            android:layout_height="71dp"
-            app:srcCompat="@drawable/glass_1" />
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="182dp"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <ImageView
+                    android:id="@+id/glass_4"
+                    android:layout_width="87dp"
+                    android:layout_height="71dp"
+                    app:srcCompat="@drawable/glass_1" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/glass_5"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="보증금 병"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                        android:textSize="24sp"
+                        android:gravity="center"/>
+                </LinearLayout>
+            </LinearLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
         <TextView
             android:id="@+id/glass_6"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="주류 제품, 콜라, 사이다"
+            android:text="주류, 콜라, 사이다"
             android:textAppearance="@style/TextAppearance.AppCompat.Large"
-            android:textSize="16sp" />
-        <ImageView
-            android:id="@+id/glassbottle"
-            android:layout_width="96dp"
-            android:layout_height="92dp"
-            android:layout_margin="17dp"
-            app:srcCompat="@drawable/glassbottle" />
-        <TextView
-            android:id="@+id/glass_explanation3"
+            android:textSize="20sp" />
+
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="17dp"
-            android:text="빈 용기 보증금 대상인 유리병류의 경우 내용물을 비우고 뚜껑을 닫아 배출해 주세요." />
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/glassbottle"
+                android:layout_width="96dp"
+                android:layout_height="92dp"
+                android:layout_margin="17dp"
+                app:srcCompat="@drawable/glassbottle" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/glass_explanation3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="17dp"
+                    android:text="빈 용기 보증금 대상
+                                  유리병류의 경우,
+                                  내용물을 비우고
+                                  뚜껑을 닫아
+                                  배출해주세요"
+                    android:textSize="14sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:layout_editor_absoluteX="18dp" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </LinearLayout>
 
         <TextView
             android:id="@+id/explanaiton"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="17dp"
             android:text="참고"
-            android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+            android:layout_marginTop="17dp"
+            android:layout_marginBottom="17dp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textSize="20sp" />
 
         <TextView
             android:id="@+id/explanation2"
@@ -111,3 +210,4 @@
             android:text="거울, 전구, 도자기류, 내열 식기류는 유리가 아닙니다." />
     </LinearLayout>
 </ScrollView>
+</LinearLayout>
