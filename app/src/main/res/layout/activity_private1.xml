@@ -1,9 +1,278 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<LinearLayout xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".private1">
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_marginStart="30dp"
+    android:layout_marginTop="30dp"
+    android:layout_marginEnd="30dp"
+    android:layout_marginBottom="30dp"
+    android:orientation="vertical">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <ImageButton
+        android:id="@+id/back"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:width="50dp"
+        android:height="50dp"
+        android:background="#00ff0000"
+        android:src="@drawable/back_arrow"
+        android:scaleType="centerInside"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".private">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:fillViewport="true"
+            android:padding="30dp">
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="30dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:id="@+id/private1"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="전용 수거함"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                            android:textSize="24sp"
+                            android:gravity="center"/>
+                    </LinearLayout>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <TextView
+                android:id="@+id/private_battery1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="건전지"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:textSize="20sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/private_battery2"
+                    android:layout_width="96dp"
+                    android:layout_height="92dp"
+                    android:layout_margin="17dp"
+                    app:srcCompat="@drawable/battery" />
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/private_battery_ex1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="17dp"
+                        android:text="건전지는 발열 위험이 있으니 +,-극을 테이프로 막고 폐건전지함에 배출해주세요."
+                        android:textSize="14sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        tools:layout_editor_absoluteX="18dp" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/private_battery_ex2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="17dp"
+                android:text="보조배터리는 폐건전지 수거함으로 배출해주세요." />
+
+            <TextView
+                android:id="@+id/private_bulb"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="전구"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:textSize="20sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/private_bulb2"
+                    android:layout_width="96dp"
+                    android:layout_height="92dp"
+                    android:layout_margin="17dp"
+                    app:srcCompat="@drawable/idea" />
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/private_battery_ex"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="17dp"
+                        android:text="다 쓴 형광등은
+                                    폐형광등 수거함에
+                                    배출해주세요."
+                        android:textSize="14sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        tools:layout_editor_absoluteX="18dp" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/private_battery_ex2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="17dp"
+                android:text="LED 전구는 일반 쓰레기로 배출해주세요." />
+
+            <TextView
+                android:id="@+id/private_clothes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="의류"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:textSize="20sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/private_clothes2"
+                    android:layout_width="96dp"
+                    android:layout_height="92dp"
+                    android:layout_margin="17dp"
+                    app:srcCompat="@drawable/clothes" />
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/private_clothes_ex"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="17dp"
+                        android:text="의류, 가방, 모자,
+                                    커텐,홑이불은
+                                    헌옷수거함으로
+                                    배출해주세요."
+                        android:textSize="14sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        tools:layout_editor_absoluteX="18dp" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/private_clothes_ex2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="17dp"
+                android:text="신발류는 비닐에 쌍을 맞춰 담거나 끈 등으로 묶어 폐의류 전용 수거함에 배출해주세요." />
+
+            <TextView
+                android:id="@+id/private_medicine"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="약"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:textSize="20sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/private_medicine2"
+                    android:layout_width="96dp"
+                    android:layout_height="92dp"
+                    android:layout_margin="17dp"
+                    app:srcCompat="@drawable/capsules" />
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/private_medicine_ex"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="17dp"
+                        android:text="보건소 및 약국의
+                                    폐의약품 수거함에
+                                    배출해주세요."
+                        android:textSize="14sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        tools:layout_editor_absoluteX="18dp" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/private_appliance"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="폐가전"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:textSize="20sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/private_appliance2"
+                    android:layout_width="96dp"
+                    android:layout_height="92dp"
+                    android:layout_margin="17dp"
+                    app:srcCompat="@drawable/appliances" />
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/private_appliance3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="17dp"
+                        android:text="소형 가전은
+                                    소형 가전제품 분리수거함에 배출해주세요."
+                        android:textSize="14sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        tools:layout_editor_absoluteX="18dp" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/private_appliance4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="17dp"
+                android:text="높이 1m 미만의 소형 가전은 재활용품과 함께 배출해주세요." />
+
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
