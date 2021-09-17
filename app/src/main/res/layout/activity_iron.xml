@@ -37,7 +37,7 @@
             android:textSize="16sp" />
 
         <ImageView
-            android:id="@+id/imageView"
+            android:id="@+id/can"
             android:layout_width="96dp"
             android:layout_height="92dp"
             android:layout_margin="17dp"
@@ -51,7 +51,7 @@
             android:text="내용물을 비우고 물로 헹구어 배출해 주세요." />
 
         <ImageView
-            android:id="@+id/imageView2"
+            android:id="@+id/spray"
             android:layout_width="96dp"
             android:layout_height="92dp"
             android:layout_margin="17dp"
@@ -85,13 +85,13 @@
             android:textSize="16sp" />
 
         <ImageView
-            android:id="@+id/imageView1"
+            android:id="@+id/pegs"
             android:layout_width="64dp"
             android:layout_height="59dp"
             android:layout_margin="17dp"
             app:srcCompat="@drawable/pegs" />
         <ImageView
-            android:id="@+id/imageView3"
+            android:id="@+id/pot"
             android:layout_width="64dp"
             android:layout_height="59dp"
             android:layout_margin="17dp"

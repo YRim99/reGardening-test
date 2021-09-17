@@ -36,14 +36,14 @@
             android:textSize="16sp" />
 
         <ImageView
-            android:id="@+id/imageView"
+            android:id="@+id/vinilimage"
             android:layout_width="96dp"
             android:layout_height="92dp"
             android:layout_margin="17dp"
             app:srcCompat="@drawable/vinil" />
 
         <TextView
-            android:id="@+id/book_explaneation"
+            android:id="@+id/vinil_explanation"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="17dp"
@@ -52,7 +52,7 @@
 
 
         <TextView
-            android:id="@+id/box_explanation"
+            android:id="@+id/vinil_explanation2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="17dp"

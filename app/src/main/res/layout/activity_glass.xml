@@ -37,14 +37,14 @@
             android:textSize="16sp" />
 
         <ImageView
-            android:id="@+id/imageView"
+            android:id="@+id/bottle"
             android:layout_width="96dp"
             android:layout_height="92dp"
             android:layout_margin="17dp"
             app:srcCompat="@drawable/bottle" />
 
         <TextView
-            android:id="@+id/plastic_explanation"
+            android:id="@+id/glass_explanation"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="17dp"
@@ -57,7 +57,7 @@
             android:layout_margin="17dp"
             android:text="유리병과 재질이 다른 부속품들은 제거하여 배출해 주세요." />
         <TextView
-            android:id="@+id/plastic_3"
+            android:id="@+id/glass_4"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="17dp"
@@ -65,23 +65,23 @@
             android:textAppearance="@style/TextAppearance.AppCompat.Large" />
 
         <ImageView
-            android:id="@+id/plastic_4"
+            android:id="@+id/glass_5"
             android:layout_width="87dp"
             android:layout_height="71dp"
             app:srcCompat="@drawable/glass_1" />
         <TextView
-            android:id="@+id/plastic_5"
+            android:id="@+id/glass_6"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="주류 제품, 콜라, 사이다"
             android:textAppearance="@style/TextAppearance.AppCompat.Large"
             android:textSize="16sp" />
         <ImageView
-            android:id="@+id/imageView1"
+            android:id="@+id/glassbottle"
             android:layout_width="96dp"
             android:layout_height="92dp"
             android:layout_margin="17dp"
-            app:srcCompat="@drawable/bottl1" />
+            app:srcCompat="@drawable/glassbottle" />
         <TextView
             android:id="@+id/glass_explanation3"
             android:layout_width="match_parent"
