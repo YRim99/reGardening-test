@@ -6,27 +6,34 @@
         android:id="@+id/first"
         app:showAsAction="ifRoom"
         android:enabled="true"
-        android:icon="@drawable/ic_baseline_home_24"
-        android:title="첫번째" />
+        android:icon="@drawable/ic_baseline_local_florist_24"
+        android:title="Garden" />
 
     <item
         android:id="@+id/second"
         app:showAsAction="ifRoom"
-        android:icon="@drawable/ic_baseline_search_24"
-        android:title="두번째" />
+        android:icon="@drawable/ic_baseline_collection"
+        android:title="Collection" />
 
     <item
         android:id="@+id/third"
         app:showAsAction="ifRoom"
         android:enabled="true"
         android:icon="@drawable/ic_baseline_mission_24"
-        android:title="세번째" />
+        android:title="Mission" />
 
     <item
         android:id="@+id/fourth"
         app:showAsAction="ifRoom"
         android:enabled="true"
-        android:icon="@drawable/ic_baseline_wb_sunny_24"
-        android:title="네번째" />
+        android:icon="@drawable/ic_baseline_tip"
+        android:title="Tip" />
+
+    <item
+        android:id="@+id/fifth"
+        app:showAsAction="ifRoom"
+        android:enabled="true"
+        android:icon="@drawable/ic_baseline_history"
+        android:title="History" />
 
 </menu>

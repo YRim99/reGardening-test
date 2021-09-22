@@ -6,15 +6,13 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 
-class frag_collection : Fragment() {
+class frag_tip : Fragment() {
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
-
-
     ): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_frag_collection, container, false)
+        return inflater.inflate(R.layout.fragment_frag_tip, container, false)
     }
 }
