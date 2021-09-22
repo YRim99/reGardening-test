@@ -3,11 +3,13 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".frag_garden">
+    tools:context=".frag_tip">
 
-    <ImageView
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:src="@drawable/garden"/>
+        android:text="tip page"
+        android:textSize="50dp"/>
 
 </FrameLayout>

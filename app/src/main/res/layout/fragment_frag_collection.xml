@@ -9,192 +9,319 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical">
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="My Collection"
-        android:textSize="40dp"
-        android:layout_gravity="center"
-        android:layout_marginTop="20dp"
-        android:layout_marginBottom="20dp"/>
+        android:orientation="vertical"
+        android:background="@drawable/garden">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/coin_button"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:src="@drawable/coin"></ImageView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="  ">
+        </TextView>
+        <TextView
+            android:id="@+id/myMoney"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="1000"
+            android:textSize="15dp">
+        </TextView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="  ">
+            </TextView>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:src="@drawable/fence"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp">
+
+            </ImageView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Flower Shop"
+                android:textSize="30dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"/>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:src="@drawable/fence"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp">
+
+            </ImageView>
+        </LinearLayout>
 
         <ScrollView
-            android:layout_width="match_parent"
+            android:layout_marginTop="20dp"
+            android:layout_width="300dp"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="10dp"
-            android:layout_marginRight="10dp"
-            >
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_gravity="center">
+
     <TableLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:stretchColumns="*">
+        android:layout_height="match_parent">
+
 
         <TableRow
-            android:layout_weight = "1"
-            android:layout_marginBottom="20dp"
-            >
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/flower_example" />
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_height="100dp"
+                android:layout_width="100dp"
+                android:src="@drawable/flower_example"/>
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_height="100dp"
+                android:layout_width="100dp"
+                android:src="@drawable/flower_example" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <Button
+                android:text="10"
+                android:layout_height="30dp"
+                android:drawableLeft="@drawable/coin_mini"
+                android:background="@drawable/coin_button">
+            </Button>
+
+            <Button
+                android:text="15"
+                android:layout_height="30dp"
+                android:drawableLeft="@drawable/coin_mini"
+                android:background="@drawable/coin_button">
+
+            </Button>
+
+            <Button
+                android:text="20"
+                android:layout_height="30dp"
+                android:drawableLeft="@drawable/coin_mini"
+                android:background="@drawable/coin_button">
+            </Button>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
 
             <ImageView
                 android:id="@+id/imageView4"
-                android:layout_height="120dp"
-                android:layout_weight="1"
-                android:src="@drawable/box" />
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/flower_example" />
+            <ImageView
+                android:id="@+id/imageView5"
+                android:layout_height="100dp"
+                android:layout_width="100dp"
+                android:src="@drawable/flower_example"/>
+            <ImageView
+                android:id="@+id/imageView6"
+                android:layout_height="100dp"
+                android:layout_width="100dp"
+                android:src="@drawable/flower_example" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <Button
+                android:text="10"
+                android:layout_height="30dp"
+                android:drawableLeft="@drawable/coin_mini"
+                android:background="@drawable/coin_button">
+            </Button>
+
+            <Button
+                android:text="15"
+                android:layout_height="30dp"
+                android:drawableLeft="@drawable/coin_mini"
+                android:background="@drawable/coin_button">
+
+            </Button>
+
+            <Button
+                android:text="20"
+                android:layout_height="30dp"
+                android:drawableLeft="@drawable/coin_mini"
+                android:background="@drawable/coin_button">
+            </Button>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
 
             <ImageView
                 android:id="@+id/imageView7"
-                android:layout_height="120dp"
-                android:layout_weight="1"
-                tools:src="@drawable/spray" />
-
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/flower_example" />
             <ImageView
                 android:id="@+id/imageView8"
-                android:layout_height="120dp"
-                android:layout_weight="1"
-                android:src="@drawable/bottl1" />
+                android:layout_height="100dp"
+                android:layout_width="100dp"
+                android:src="@drawable/flower_example"/>
+            <ImageView
+                android:id="@+id/imageView9"
+                android:layout_height="100dp"
+                android:layout_width="100dp"
+                android:src="@drawable/flower_example" />
         </TableRow>
 
         <TableRow
-            android:layout_weight = "1"
-            android:layout_marginBottom="20dp">
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <Button
+                android:text="10"
+                android:layout_height="30dp"
+                android:drawableLeft="@drawable/coin_mini"
+                android:background="@drawable/coin_button">
+            </Button>
 
-            <ImageView
-                android:id="@+id/imageView9"
-                android:layout_height="120dp"
-                android:layout_weight="1"
-                android:src="@drawable/box" />
+            <Button
+                android:text="15"
+                android:layout_height="30dp"
+                android:drawableLeft="@drawable/coin_mini"
+                android:background="@drawable/coin_button">
+
+            </Button>
+
+            <Button
+                android:text="20"
+                android:layout_height="30dp"
+                android:drawableLeft="@drawable/coin_mini"
+                android:background="@drawable/coin_button">
+            </Button>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
 
             <ImageView
                 android:id="@+id/imageView10"
-                android:layout_height="120dp"
-                android:layout_weight="1"
-                tools:src="@drawable/spray" />
-
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/flower_example" />
             <ImageView
                 android:id="@+id/imageView11"
-                android:layout_height="120dp"
-                android:layout_weight="1"
-                android:src="@drawable/bottl1" />
+                android:layout_height="100dp"
+                android:layout_width="100dp"
+                android:src="@drawable/flower_example"/>
+            <ImageView
+                android:id="@+id/imageView12"
+                android:layout_height="100dp"
+                android:layout_width="100dp"
+                android:src="@drawable/flower_example" />
         </TableRow>
 
         <TableRow
-            android:layout_weight = "1"
-            android:layout_marginBottom="20dp">
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <Button
+                android:text="10"
+                android:layout_height="30dp"
+                android:drawableLeft="@drawable/coin_mini"
+                android:background="@drawable/coin_button">
+            </Button>
 
-            <ImageView
-                android:id="@+id/imageView12"
-                android:layout_height="120dp"
-                android:layout_weight="1"
-                android:src="@drawable/box" />
+            <Button
+                android:text="15"
+                android:layout_height="30dp"
+                android:drawableLeft="@drawable/coin_mini"
+                android:background="@drawable/coin_button">
+
+            </Button>
+
+            <Button
+                android:text="20"
+                android:layout_height="30dp"
+                android:drawableLeft="@drawable/coin_mini"
+                android:background="@drawable/coin_button">
+            </Button>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
 
             <ImageView
                 android:id="@+id/imageView13"
-                android:layout_height="120dp"
-                android:layout_weight="1"
-                tools:src="@drawable/spray" />
-
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/flower_example" />
             <ImageView
                 android:id="@+id/imageView14"
-                android:layout_height="120dp"
-                android:layout_weight="1"
-                android:src="@drawable/bottl1" />
-        </TableRow>
-
-        <TableRow
-            android:layout_weight = "1"
-            android:layout_marginBottom="20dp">
-
+                android:layout_height="100dp"
+                android:layout_width="100dp"
+                android:src="@drawable/flower_example"/>
             <ImageView
                 android:id="@+id/imageView15"
-                android:layout_height="120dp"
-                android:layout_weight="1"
-                android:src="@drawable/box" />
-
-            <ImageView
-                android:id="@+id/imageView16"
-                android:layout_height="120dp"
-                android:layout_weight="1"
-                tools:src="@drawable/spray" />
-
-            <ImageView
-                android:id="@+id/imageView17"
-                android:layout_height="120dp"
-                android:layout_weight="1"
-                android:src="@drawable/bottl1" />
+                android:layout_height="100dp"
+                android:layout_width="100dp"
+                android:src="@drawable/flower_example" />
         </TableRow>
-
 
         <TableRow
-            android:layout_weight = "1"
-            android:layout_marginBottom="20dp">
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <Button
+                android:text="10"
+                android:layout_height="30dp"
+                android:drawableLeft="@drawable/coin_mini"
+                android:background="@drawable/coin_button">
+            </Button>
 
-            <ImageView
-                android:id="@+id/imageView18"
-                android:layout_height="120dp"
-                android:layout_weight="1"
-                android:src="@drawable/box" />
+            <Button
+                android:text="15"
+                android:layout_height="30dp"
+                android:drawableLeft="@drawable/coin_mini"
+                android:background="@drawable/coin_button">
 
-            <ImageView
-                android:id="@+id/imageView19"
-                android:layout_height="120dp"
-                android:layout_weight="1"
-                tools:src="@drawable/spray" />
+            </Button>
 
-            <ImageView
-                android:id="@+id/imageView20"
-                android:layout_height="120dp"
-                android:layout_weight="1"
-                android:src="@drawable/bottl1" />
+            <Button
+                android:text="20"
+                android:layout_height="30dp"
+                android:drawableLeft="@drawable/coin_mini"
+                android:background="@drawable/coin_button">
+            </Button>
         </TableRow>
-
-
-        <TableRow
-            android:layout_weight = "1"
-            android:layout_marginBottom="20dp">
-
-            <ImageView
-                android:id="@+id/imageView21"
-                android:layout_height="120dp"
-                android:layout_weight="1"
-                android:src="@drawable/box" />
-
-            <ImageView
-                android:id="@+id/imageView22"
-                android:layout_height="120dp"
-                android:layout_weight="1"
-                tools:src="@drawable/spray" />
-
-            <ImageView
-                android:id="@+id/imageView23"
-                android:layout_height="120dp"
-                android:layout_weight="1"
-                android:src="@drawable/bottl1" />
-        </TableRow>
-
-
-        <TableRow
-            android:layout_weight = "1"
-            android:layout_marginBottom="20dp">
-
-            <ImageView
-                android:id="@+id/imageView24"
-                android:layout_height="120dp"
-                android:layout_weight="1"
-                android:src="@drawable/box" />
-
-            <ImageView
-                android:id="@+id/imageView25"
-                android:layout_height="120dp"
-                android:layout_weight="1"
-                tools:src="@drawable/spray" />
-
-            <ImageView
-                android:id="@+id/imageView26"
-                android:layout_height="120dp"
-                android:layout_weight="1"
-                android:src="@drawable/bottl1" />
-        </TableRow>
-
     </TableLayout>
         </ScrollView>
     </LinearLayout>
