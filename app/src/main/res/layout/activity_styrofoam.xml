@@ -1,54 +1,108 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".styrofoam">
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_marginStart="30dp"
+    android:layout_marginTop="30dp"
+    android:layout_marginEnd="30dp"
+    android:layout_marginBottom="30dp"
+    android:orientation="vertical">
+
+    <ImageButton
+        android:id="@+id/back"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:width="50dp"
+        android:height="50dp"
+        android:background="#00ff0000"
+        android:src="@drawable/back_arrow"
+        android:scaleType="centerInside"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".styrofoam">
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:fillViewport="true"
-        android:padding="30dp">
+        android:fillViewport="true">
 
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
 
-    <TextView
-        android:id="@+id/galss_1"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="17dp"
-        android:text="스티로폼"
-        android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+            <LinearLayout
+                android:layout_width="182dp"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
 
-    <ImageView
-        android:id="@+id/glass_2"
-        android:layout_width="87dp"
-        android:layout_height="71dp"
-        app:srcCompat="@drawable/plastic" />
+                <ImageView
+                    android:id="@+id/styrofoam_1"
+                    android:layout_width="87dp"
+                    android:layout_height="71dp"
+                    app:srcCompat="@drawable/plastic" />
 
-    <TextView
-        android:id="@+id/glass_3"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="스티로폼 완충재"
-        android:textAppearance="@style/TextAppearance.AppCompat.Large"
-        android:textSize="16sp" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
 
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="96dp"
-        android:layout_height="92dp"
-        android:layout_margin="17dp"
-        app:srcCompat="@drawable/bottle" />
+                    <TextView
+                        android:id="@+id/styrofoam_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="스티로폼"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                        android:textSize="24sp"
+                        android:gravity="center"/>
+                </LinearLayout>
+            </LinearLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
 
-    <TextView
-        android:id="@+id/plastic_explanation"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="17dp"
-        android:text="송장, 테이프 등 이물질을 제고하고 흰색 스티로폼인 경우만 배출해 주세요." />
+        <TextView
+            android:id="@+id/styrofoam_3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="스티로폼 완충재"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textSize="20sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/styrofoambox"
+                android:layout_width="96dp"
+                android:layout_height="92dp"
+                android:layout_margin="17dp"
+                app:srcCompat="@drawable/styrofoambox" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/styrofoam_explanation"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="17dp"
+                    android:text="송장, 테이프 등 이물질을
+                                제거하고 흰색 스티로폼인
+                                경우만 배출해주세요."
+                    android:textSize="14sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:layout_editor_absoluteX="18dp" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </LinearLayout>
 
     <TextView
         android:id="@+id/glass_explanation2"
@@ -57,13 +111,15 @@
         android:layout_margin="17dp"
         android:text="부피가 큰 스티로폼은 부숴서 배출해 주세요." />
 
-    <TextView
-        android:id="@+id/explanaiton"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="17dp"
-        android:text="참고"
-        android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+        <TextView
+            android:id="@+id/paper_3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="참고"
+            android:layout_marginTop="17dp"
+            android:layout_marginBottom="17dp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textSize="20sp" />
 
     <TextView
         android:id="@+id/explanation3"
@@ -74,3 +130,4 @@
     </LinearLayout>
 
   </ScrollView>
+</LinearLayout>

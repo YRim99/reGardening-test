@@ -5,65 +5,27 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".vinil">
-
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_marginStart="30dp"
-        android:layout_marginTop="30dp"
-        android:layout_marginEnd="30dp"
-        android:layout_marginBottom="30dp"
+        android:layout_height="wrap_content"
         android:orientation="vertical"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView"
-        app:layout_constraintVertical_bias="1.0">
+        android:fillViewport="true"
+        android:padding="30dp">
 
-        <ImageButton
-            android:id="@+id/back"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            android:width="50dp"
-            android:height="50dp"
-            android:background="#00ff0000"
-            android:src="@drawable/back_arrow"
-            android:scaleType="centerInside"/>
 
-        <androidx.constraintlayout.widget.ConstraintLayout
+        <TextView
+            android:id="@+id/vinil_1"
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="wrap_content"
+            android:layout_margin="17dp"
+            android:text="비닐류"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large" />
 
-            <LinearLayout
-                android:layout_width="182dp"
-                android:layout_height="match_parent"
-                android:orientation="horizontal"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent">
-
-                <ImageView
-                    android:id="@+id/vinil_2"
-                    android:layout_width="87dp"
-                    android:layout_height="71dp"
-                    app:srcCompat="@drawable/vinil_1" />
-<LinearLayout
-    android:layout_width="match_parent"
-    android:layout_height="match_parent">
-                <TextView
-                    android:id="@+id/vinil_1"
-                    android:layout_width="83dp"
-                    android:layout_height="wrap_content"
-                    android:layout_margin="17dp"
-                    android:text="비닐류"
-                    android:textAppearance="@style/TextAppearance.AppCompat.Large"
-                    android:textSize="26sp" />
-</LinearLayout>
-            </LinearLayout>
-        </androidx.constraintlayout.widget.ConstraintLayout>
-
+        <ImageView
+            android:id="@+id/vinil_2"
+            android:layout_width="87dp"
+            android:layout_height="71dp"
+            app:srcCompat="@drawable/vinil_1" />
 
         <TextView
             android:id="@+id/vinil_3"
@@ -71,36 +33,22 @@
             android:layout_height="wrap_content"
             android:text="비닐"
             android:textAppearance="@style/TextAppearance.AppCompat.Large"
-            android:textSize="20sp" />
+            android:textSize="16sp" />
 
-        <LinearLayout
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="96dp"
+            android:layout_height="92dp"
+            android:layout_margin="17dp"
+            app:srcCompat="@drawable/vinil" />
+
+        <TextView
+            android:id="@+id/book_explaneation"
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="wrap_content"
+            android:layout_margin="17dp"
+            android:text="이물질과 스티커 등을 제거한 후 배출해 주세요." />
 
-            <ImageView
-                android:id="@+id/imageView"
-                android:layout_width="96dp"
-                android:layout_height="92dp"
-                android:layout_margin="17dp"
-                app:srcCompat="@drawable/vinil" />
-
-            <androidx.constraintlayout.widget.ConstraintLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent">
-
-                <TextView
-                    android:id="@+id/book_explaneation"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_margin="17dp"
-                    android:text="이물질과 스티커 등을 제거한 후 배출해 주세요."
-                    android:textSize="14sp"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintTop_toTopOf="parent"
-                    tools:layout_editor_absoluteX="18dp" />
-            </androidx.constraintlayout.widget.ConstraintLayout>
-
-        </LinearLayout>
 
 
         <TextView
@@ -108,40 +56,36 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="17dp"
-            android:text="50cm 이상인 PVC 코팅지와 OTHER라고 표기된 비닐은 일반 쓰레기로 배출해 주세요."
-            android:textSize="14sp" />
+            android:text="50cm 이상인 PVC 코팅지와 OTHER라고 표기된 비닐은 일반 쓰레기로 배출해 주세요." />
 
         <TextView
             android:id="@+id/explanaiton"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_margin="17dp"
             android:text="참고"
-            android:textAppearance="@style/TextAppearance.AppCompat.Large"
-            android:textSize="20sp" />
+            android:textAppearance="@style/TextAppearance.AppCompat.Large" />
 
         <TextView
             android:id="@+id/explanation2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="17dp"
-            android:text="바람에 흩날릴 수 있도록 딱지 모양으로 접어서 버리지 마세요."
-            android:textSize="14sp" />
+            android:text="바람에 흩날릴 수 있도록 딱지 모양으로 접어서 버리지 마세요." />
 
         <TextView
             android:id="@+id/explanation3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="17dp"
-            android:text="포장용 완충제(뽁뽁이, 에어캡)도 비닐로 배출해 주세요."
-            android:textSize="14sp" />
+            android:text="포장용 완충제(뽁뽁이, 에어캡)도 비닐로 배출해 주세요." />
 
         <TextView
             android:id="@+id/explanation4"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="17dp"
-            android:text="알약 포장지는 일반 쓰레기로 배출해 주세요."
-            android:textSize="14sp" />
+            android:text="알약 포장지는 일반 쓰레기로 배출해 주세요." />
 
     </LinearLayout>
 </ScrollView>

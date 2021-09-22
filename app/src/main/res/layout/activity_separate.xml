@@ -49,14 +49,6 @@
             android:text="캔류"
             app:layout_constraintHorizontal_bias="0.495"/>
 
-        <Button
-            android:id="@+id/btn_private"
-            android:layout_width="292dp"
-            android:layout_height="50dp"
-            android:layout_marginBottom="20dp"
-            android:text="전용수거함"
-            app:layout_constraintHorizontal_bias="0.495"
-            tools:layout_editor_absoluteY="588dp" />
 
         <Button
             android:id="@+id/btn_paper"
@@ -65,14 +57,6 @@
             android:layout_marginBottom="20dp"
             android:text="종이류"
             app:layout_constraintHorizontal_bias="0.495" />
-
-        <Button
-            android:id="@+id/btn_notfire"
-            android:layout_width="292dp"
-            android:layout_height="50dp"
-            android:layout_marginBottom="20dp"
-            android:text="불연성"
-            app:layout_constraintHorizontal_bias="0.495"/>
 
         <Button
             android:id="@+id/btn_plastic"
@@ -94,7 +78,24 @@
             android:id="@+id/btn_glass"
             android:layout_width="292dp"
             android:layout_height="50dp"
+            android:layout_marginBottom="20dp"
             android:text="유리병류"
             app:layout_constraintHorizontal_bias="0.495" />
+
+        <Button
+            android:id="@+id/btn_private"
+            android:layout_width="292dp"
+            android:layout_height="50dp"
+            android:layout_marginBottom="20dp"
+            android:text="전용수거함"
+            app:layout_constraintHorizontal_bias="0.495"
+            tools:layout_editor_absoluteY="588dp" />
+
+        <Button
+            android:id="@+id/btn_nonfire"
+            android:layout_width="292dp"
+            android:layout_height="50dp"
+            android:text="불연성"
+            app:layout_constraintHorizontal_bias="0.495"/>
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

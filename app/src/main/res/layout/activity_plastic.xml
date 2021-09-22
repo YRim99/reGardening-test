@@ -41,7 +41,7 @@
             android:layout_width="96dp"
             android:layout_height="92dp"
             android:layout_margin="17dp"
-            app:srcCompat="@drawable/plasic_1" />
+            app:srcCompat="@drawable/plastic_1" />
 
         <TextView
             android:id="@+id/plastic_explanation"

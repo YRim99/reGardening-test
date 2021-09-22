@@ -5,12 +5,12 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
 
-class paper : AppCompatActivity() {
+class nonfire : AppCompatActivity() {
     lateinit var back: Button
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_paper)
+        setContentView(R.layout.activity_nonfire)
         back = findViewById<Button>(R.id.back)
 
         back.setOnClickListener {
