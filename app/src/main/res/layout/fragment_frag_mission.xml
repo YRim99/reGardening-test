@@ -5,15 +5,11 @@
     android:layout_height="match_parent"
     tools:context=".frag_mission">
 
-    <ScrollView
-        android:layout_width="354dp"
-        android:layout_height="493dp"
-        android:layout_gravity="center"
-        android:background="@drawable/mission_page_design">
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="mission page"
+        android:textSize="50dp"/>
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical" />
-    </ScrollView>
 </FrameLayout>
