@@ -77,12 +77,12 @@
                 android:id="@+id/color_MorningGlory"
                 android:layout_height="80dp"
                 android:layout_width="80dp"
-                android:src="@drawable/MorningGlory"/>
+                android:src="@drawable/morningGlory"/>
             <ImageView
                 android:id="@+id/color_Rudbeckia"
                 android:layout_height="80dp"
                 android:layout_width="80dp"
-                android:src="@drawable/Rudbeckia" />
+                android:src="@drawable/rudbeckia" />
         </TableRow>
 
         <TableRow
@@ -124,12 +124,12 @@
                 android:id="@+id/color_AsterYomena"
                 android:layout_height="80dp"
                 android:layout_width="80dp"
-                android:src="@drawable/AsterYomena"/>
+                android:src="@drawable/asterYomena"/>
             <ImageView
                 android:id="@+id/color_Monstera"
                 android:layout_height="80dp"
                 android:layout_width="80dp"
-                android:src="@drawable/Monstera" />
+                android:src="@drawable/monstera" />
         </TableRow>
 
         <TableRow
@@ -166,17 +166,17 @@
                 android:id="@+id/color_Narcissus"
                 android:layout_height="80dp"
                 android:layout_width="80dp"
-                android:src="@drawable/Narcissus" />
+                android:src="@drawable/narcissus" />
             <ImageView
                 android:id="@+id/colo_WindFlower"
                 android:layout_height="80dp"
                 android:layout_width="80dp"
-                android:src="@drawable/WindFlower"/>
+                android:src="@drawable/windFlower"/>
             <ImageView
                 android:id="@+id/color_Alocasia"
                 android:layout_height="80dp"
                 android:layout_width="80dp"
-                android:src="@drawable/Alocasia" />
+                android:src="@drawable/alocasia" />
         </TableRow>
 
         <TableRow
@@ -213,17 +213,17 @@
                 android:id="@+id/color_Monterey_cypress"
                 android:layout_height="80dp"
                 android:layout_width="80dp"
-                android:src="@drawable/Monterey_cypress" />
+                android:src="@drawable/monterey_cypress" />
             <ImageView
                 android:id="@+id/color_Vinca"
                 android:layout_height="80dp"
                 android:layout_width="80dp"
-                android:src="@drawable/Vinca"/>
+                android:src="@drawable/vinca"/>
             <ImageView
                 android:id="@+id/color_Sunpatiens"
                 android:layout_height="80dp"
                 android:layout_width="80dp"
-                android:src="@drawable/Sunpatiens" />
+                android:src="@drawable/sunpatiens" />
         </TableRow>
 
         <TableRow
@@ -260,17 +260,17 @@
                 android:id="@+id/color_Tropaeolum_majus"
                 android:layout_height="80dp"
                 android:layout_width="80dp"
-                android:src="@drawable/Tropaeolum_majus" />
+                android:src="@drawable/tropaeolum_majus" />
             <ImageView
                 android:id="@+id/color_Dendropanax"
                 android:layout_height="80dp"
                 android:layout_width="80dp"
-                android:src="@drawable/Dendropanax"/>
+                android:src="@drawable/dendropanax"/>
             <ImageView
                 android:id="@+id/color_Hibiscus"
                 android:layout_height="80dp"
                 android:layout_width="80dp"
-                android:src="@drawable/Hibiscus" />
+                android:src="@drawable/hibiscus" />
         </TableRow>
 
         <TableRow
@@ -307,17 +307,17 @@
                 android:id="@+id/color_Hyacinth"
                 android:layout_height="80dp"
                 android:layout_width="80dp"
-                android:src="@drawable/Hyacinth" />
+                android:src="@drawable/hyacinth" />
             <ImageView
                 android:id="@+id/image1"
                 android:layout_height="80dp"
                 android:layout_width="80dp"
-                android:src="@drawable/Dendropanax"/>
+                android:src="@drawable/dendropanax"/>
             <ImageView
                 android:id="@+id/image2"
                 android:layout_height="80dp"
                 android:layout_width="80dp"
-                android:src="@drawable/Hibiscus" />
+                android:src="@drawable/hibiscus" />
         </TableRow>
 
         <TableRow
