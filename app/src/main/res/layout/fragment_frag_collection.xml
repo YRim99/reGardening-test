@@ -12,36 +12,12 @@
         android:orientation="vertical"
         android:background="@drawable/garden">
 
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:background="@drawable/coin_button"
-            android:layout_marginLeft="20dp"
-            android:layout_marginTop="20dp">
-
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:src="@drawable/coin"></ImageView>
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="  ">
+            android:text="미션을 클리어하시면 보상으로 얻을 수 있어요"
+            android:layout_gravity="center">
         </TextView>
-        <TextView
-            android:id="@+id/total_money"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:text="1000"
-            android:textSize="15dp">
-        </TextView>
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="  ">
-            </TextView>
-        </LinearLayout>
 
 
         <LinearLayout
@@ -51,7 +27,7 @@
             android:layout_gravity="center">
             <ImageView
                 android:layout_width="wrap_content"
-                android:layout_height="40dp"
+                android:layout_height="35dp"
                 android:src="@drawable/fence"
                 android:layout_marginTop="20dp"
                 android:layout_marginBottom="20dp">
@@ -60,13 +36,13 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Flower Shop"
+                android:text="My Collection"
                 android:textSize="30dp"
                 android:layout_marginTop="20dp"
                 android:layout_marginBottom="20dp"/>
             <ImageView
                 android:layout_width="wrap_content"
-                android:layout_height="40dp"
+                android:layout_height="35dp"
                 android:src="@drawable/fence"
                 android:layout_marginTop="20dp"
                 android:layout_marginBottom="20dp">
@@ -76,14 +52,14 @@
 
         <ScrollView
             android:layout_marginTop="20dp"
-            android:layout_width="300dp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="20dp"
             android:layout_marginRight="20dp"
             android:layout_gravity="center">
 
     <TableLayout
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="match_parent">
 
 
@@ -92,93 +68,46 @@
             android:layout_height="match_parent">
 
             <ImageView
-                android:id="@+id/imageView1"
-                android:layout_width="100dp"
-                android:layout_height="100dp"
-                android:src="@drawable/flower_example" />
+                android:id="@+id/color_꽃기린"
+                android:layout_height="80dp"
+                android:layout_width="80dp"
+                android:src="@drawable/꽃기린" />
 
             <ImageView
-                android:id="@+id/imageView2"
-                android:layout_height="100dp"
-                android:layout_width="100dp"
-                android:src="@drawable/flower_example"/>
+                android:id="@+id/color_나팔꽃"
+                android:layout_height="80dp"
+                android:layout_width="80dp"
+                android:src="@drawable/나팔꽃"/>
             <ImageView
-                android:id="@+id/imageView3"
-                android:layout_height="100dp"
-                android:layout_width="100dp"
-                android:src="@drawable/flower_example" />
+                android:id="@+id/color_루드베키아"
+                android:layout_height="80dp"
+                android:layout_width="80dp"
+                android:src="@drawable/루드베키아" />
         </TableRow>
 
         <TableRow
             android:layout_width="match_parent"
             android:layout_height="match_parent">
             <Button
-                android:text="10"
+                android:text="꽃기린"
                 android:layout_height="30dp"
-                android:drawableLeft="@drawable/coin_mini"
-                android:background="@drawable/coin_button">
+                android:background="@drawable/coin_button"
+                android:layout_margin="3dp">
             </Button>
 
             <Button
-                android:text="15"
+                android:text="나팔꽃"
                 android:layout_height="30dp"
-                android:drawableLeft="@drawable/coin_mini"
-                android:background="@drawable/coin_button">
-
-            </Button>
-
-            <Button
-                android:text="20"
-                android:layout_height="30dp"
-                android:drawableLeft="@drawable/coin_mini"
-                android:background="@drawable/coin_button">
-            </Button>
-        </TableRow>
-
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
-
-            <ImageView
-                android:id="@+id/imageView4"
-                android:layout_width="100dp"
-                android:layout_height="100dp"
-                android:src="@drawable/flower_example" />
-            <ImageView
-                android:id="@+id/imageView5"
-                android:layout_height="100dp"
-                android:layout_width="100dp"
-                android:src="@drawable/flower_example"/>
-            <ImageView
-                android:id="@+id/imageView6"
-                android:layout_height="100dp"
-                android:layout_width="100dp"
-                android:src="@drawable/flower_example" />
-        </TableRow>
-
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
-            <Button
-                android:text="10"
-                android:layout_height="30dp"
-                android:drawableLeft="@drawable/coin_mini"
-                android:background="@drawable/coin_button">
-            </Button>
-
-            <Button
-                android:text="15"
-                android:layout_height="30dp"
-                android:drawableLeft="@drawable/coin_mini"
-                android:background="@drawable/coin_button">
+                android:background="@drawable/coin_button"
+                android:layout_margin="3dp">
 
             </Button>
 
             <Button
-                android:text="20"
+                android:text="루드베키아"
                 android:layout_height="30dp"
-                android:drawableLeft="@drawable/coin_mini"
-                android:background="@drawable/coin_button">
+                android:background="@drawable/coin_button"
+                android:layout_margin="3dp">
             </Button>
         </TableRow>
 
@@ -187,44 +116,44 @@
             android:layout_height="match_parent">
 
             <ImageView
-                android:id="@+id/imageView7"
-                android:layout_width="100dp"
-                android:layout_height="100dp"
-                android:src="@drawable/flower_example" />
+                android:id="@+id/color_마거리트"
+                android:layout_height="80dp"
+                android:layout_width="80dp"
+                android:src="@drawable/마거리트" />
             <ImageView
-                android:id="@+id/imageView8"
-                android:layout_height="100dp"
-                android:layout_width="100dp"
-                android:src="@drawable/flower_example"/>
+                android:id="@+id/color_쑥부쟁이"
+                android:layout_height="80dp"
+                android:layout_width="80dp"
+                android:src="@drawable/쑥부쟁이"/>
             <ImageView
-                android:id="@+id/imageView9"
-                android:layout_height="100dp"
-                android:layout_width="100dp"
-                android:src="@drawable/flower_example" />
+                android:id="@+id/color_몬스테라"
+                android:layout_height="80dp"
+                android:layout_width="80dp"
+                android:src="@drawable/몬스테라" />
         </TableRow>
 
         <TableRow
             android:layout_width="match_parent"
             android:layout_height="match_parent">
             <Button
-                android:text="10"
+                android:text="마거리트"
                 android:layout_height="30dp"
-                android:drawableLeft="@drawable/coin_mini"
+                android:layout_margin="3dp"
                 android:background="@drawable/coin_button">
             </Button>
 
             <Button
-                android:text="15"
+                android:text="쑥부쟁이"
                 android:layout_height="30dp"
-                android:drawableLeft="@drawable/coin_mini"
+                android:layout_margin="3dp"
                 android:background="@drawable/coin_button">
 
             </Button>
 
             <Button
-                android:text="20"
+                android:text="몬스테라"
                 android:layout_height="30dp"
-                android:drawableLeft="@drawable/coin_mini"
+                android:layout_margin="3dp"
                 android:background="@drawable/coin_button">
             </Button>
         </TableRow>
@@ -234,44 +163,44 @@
             android:layout_height="match_parent">
 
             <ImageView
-                android:id="@+id/imageView10"
-                android:layout_width="100dp"
-                android:layout_height="100dp"
-                android:src="@drawable/flower_example" />
+                android:id="@+id/color_수선화"
+                android:layout_height="80dp"
+                android:layout_width="80dp"
+                android:src="@drawable/수선화" />
             <ImageView
-                android:id="@+id/imageView11"
-                android:layout_height="100dp"
-                android:layout_width="100dp"
-                android:src="@drawable/flower_example"/>
+                android:id="@+id/color_바람꽃"
+                android:layout_height="80dp"
+                android:layout_width="80dp"
+                android:src="@drawable/바람꽃"/>
             <ImageView
-                android:id="@+id/imageView12"
-                android:layout_height="100dp"
-                android:layout_width="100dp"
-                android:src="@drawable/flower_example" />
+                android:id="@+id/color_알로카시아"
+                android:layout_height="80dp"
+                android:layout_width="80dp"
+                android:src="@drawable/알로카시아" />
         </TableRow>
 
         <TableRow
             android:layout_width="match_parent"
             android:layout_height="match_parent">
             <Button
-                android:text="10"
+                android:text="수선화"
                 android:layout_height="30dp"
-                android:drawableLeft="@drawable/coin_mini"
+                android:layout_margin="3dp"
                 android:background="@drawable/coin_button">
             </Button>
 
             <Button
-                android:text="15"
+                android:text="바람꽃"
                 android:layout_height="30dp"
-                android:drawableLeft="@drawable/coin_mini"
+                android:layout_margin="3dp"
                 android:background="@drawable/coin_button">
 
             </Button>
 
             <Button
-                android:text="20"
+                android:text="알로카시아"
                 android:layout_height="30dp"
-                android:drawableLeft="@drawable/coin_mini"
+                android:layout_margin="3dp"
                 android:background="@drawable/coin_button">
             </Button>
         </TableRow>
@@ -281,44 +210,138 @@
             android:layout_height="match_parent">
 
             <ImageView
-                android:id="@+id/imageView13"
-                android:layout_width="100dp"
-                android:layout_height="100dp"
-                android:src="@drawable/flower_example" />
+                android:id="@+id/color_율마"
+                android:layout_height="80dp"
+                android:layout_width="80dp"
+                android:src="@drawable/율마" />
             <ImageView
-                android:id="@+id/imageView14"
-                android:layout_height="100dp"
-                android:layout_width="100dp"
-                android:src="@drawable/flower_example"/>
+                android:id="@+id/color_일일초"
+                android:layout_height="80dp"
+                android:layout_width="80dp"
+                android:src="@drawable/일일초"/>
             <ImageView
-                android:id="@+id/imageView15"
-                android:layout_height="100dp"
-                android:layout_width="100dp"
-                android:src="@drawable/flower_example" />
+                android:id="@+id/color_임파첸스"
+                android:layout_height="80dp"
+                android:layout_width="80dp"
+                android:src="@drawable/임파첸스" />
         </TableRow>
 
         <TableRow
             android:layout_width="match_parent"
             android:layout_height="match_parent">
             <Button
-                android:text="10"
+                android:text="율마"
                 android:layout_height="30dp"
-                android:drawableLeft="@drawable/coin_mini"
+                android:layout_margin="3dp"
                 android:background="@drawable/coin_button">
             </Button>
 
             <Button
-                android:text="15"
+                android:text="일일초"
                 android:layout_height="30dp"
-                android:drawableLeft="@drawable/coin_mini"
+                android:layout_margin="3dp"
                 android:background="@drawable/coin_button">
 
             </Button>
 
             <Button
-                android:text="20"
+                android:text="임파첸스"
                 android:layout_height="30dp"
-                android:drawableLeft="@drawable/coin_mini"
+                android:layout_margin="3dp"
+                android:background="@drawable/coin_button">
+            </Button>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/color_한련화"
+                android:layout_height="80dp"
+                android:layout_width="80dp"
+                android:src="@drawable/한련화" />
+            <ImageView
+                android:id="@+id/color_황칠나무"
+                android:layout_height="80dp"
+                android:layout_width="80dp"
+                android:src="@drawable/황칠나무"/>
+            <ImageView
+                android:id="@+id/color_히비스커스"
+                android:layout_height="80dp"
+                android:layout_width="80dp"
+                android:src="@drawable/히비스커스" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <Button
+                android:text="한련화"
+                android:layout_height="30dp"
+                android:layout_margin="3dp"
+                android:background="@drawable/coin_button">
+            </Button>
+
+            <Button
+                android:text="황칠나무"
+                android:layout_height="30dp"
+                android:layout_margin="3dp"
+                android:background="@drawable/coin_button">
+
+            </Button>
+
+            <Button
+                android:text="히비스커스"
+                android:layout_height="30dp"
+                android:layout_margin="3dp"
+                android:background="@drawable/coin_button">
+            </Button>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/color_히아신스"
+                android:layout_height="80dp"
+                android:layout_width="80dp"
+                android:src="@drawable/히아신스" />
+            <ImageView
+                android:id="@+id/image1"
+                android:layout_height="80dp"
+                android:layout_width="80dp"
+                android:src="@drawable/황칠나무"/>
+            <ImageView
+                android:id="@+id/image2"
+                android:layout_height="80dp"
+                android:layout_width="80dp"
+                android:src="@drawable/히비스커스" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <Button
+                android:text="히아신스"
+                android:layout_height="30dp"
+                android:layout_margin="3dp"
+                android:background="@drawable/coin_button">
+            </Button>
+
+            <Button
+                android:text="황칠나무"
+                android:layout_height="30dp"
+                android:layout_margin="3dp"
+                android:background="@drawable/coin_button">
+
+            </Button>
+
+            <Button
+                android:text="히비스커스"
+                android:layout_height="30dp"
+                android:layout_margin="3dp"
                 android:background="@drawable/coin_button">
             </Button>
         </TableRow>
