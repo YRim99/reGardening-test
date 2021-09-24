@@ -7,7 +7,7 @@ import android.view.View
 import android.view.ViewGroup
 
 class frag_history : Fragment() {
-    val array3 = arrayOf("통조림 햄의 본체와 뚜껑을 분리해서 버려주세요", //1
+    val missionAry = arrayOf("통조림 햄의 본체와 뚜껑을 분리해서 버려주세요", //1
                          "택배 박스를 버릴 때 박스 테이프를 제거하고 부피를 줄여 배출해주세요", //2
                          "플라스틱 중 PVC, OTHER라고 표기된 제품은 일반 쓰레기로 배출해주세요", //3
                          "가스통이나 살충제 등 스프레이 용기에 구멍을 내서 배출해주세요", //4
@@ -180,8 +180,9 @@ class frag_history : Fragment() {
                          "바늘, 압정, 깨진 유리나 접시, 거울은 신문지로 잘 싼 다음 비닐이나 천으로 말아 일반 쓰레기로 배출해주세요", //171
                          "핸드 타월로 물이 아닌 음식물, 이물질을 닦았다면 일반 쓰레기로 배출해주세요", //172
                          "PVC 코팅지는 일반 쓰레기로 배출해주세요", //173
-                         "소주병, 맥주병을 소매점에 반납하고 환급금을 받아보세요" //174)
+                         "소주병, 맥주병을 소매점에 반납하고 환급금을 받아보세요" //174
     )
+
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
