@@ -68,21 +68,21 @@
             android:layout_height="match_parent">
 
             <ImageView
-                android:id="@+id/color_꽃기린"
+                android:id="@+id/color_flower_giraffe"
                 android:layout_height="80dp"
                 android:layout_width="80dp"
-                android:src="@drawable/꽃기린" />
+                android:src="@drawable/flower_giraffe" />
 
             <ImageView
-                android:id="@+id/color_나팔꽃"
+                android:id="@+id/color_MorningGlory"
                 android:layout_height="80dp"
                 android:layout_width="80dp"
-                android:src="@drawable/나팔꽃"/>
+                android:src="@drawable/MorningGlory"/>
             <ImageView
-                android:id="@+id/color_루드베키아"
+                android:id="@+id/color_Rudbeckia"
                 android:layout_height="80dp"
                 android:layout_width="80dp"
-                android:src="@drawable/루드베키아" />
+                android:src="@drawable/Rudbeckia" />
         </TableRow>
 
         <TableRow
@@ -116,20 +116,20 @@
             android:layout_height="match_parent">
 
             <ImageView
-                android:id="@+id/color_마거리트"
+                android:id="@+id/color_marguerite"
                 android:layout_height="80dp"
                 android:layout_width="80dp"
-                android:src="@drawable/마거리트" />
+                android:src="@drawable/marguerite" />
             <ImageView
-                android:id="@+id/color_쑥부쟁이"
+                android:id="@+id/color_AsterYomena"
                 android:layout_height="80dp"
                 android:layout_width="80dp"
-                android:src="@drawable/쑥부쟁이"/>
+                android:src="@drawable/AsterYomena"/>
             <ImageView
-                android:id="@+id/color_몬스테라"
+                android:id="@+id/color_Monstera"
                 android:layout_height="80dp"
                 android:layout_width="80dp"
-                android:src="@drawable/몬스테라" />
+                android:src="@drawable/Monstera" />
         </TableRow>
 
         <TableRow
@@ -163,20 +163,20 @@
             android:layout_height="match_parent">
 
             <ImageView
-                android:id="@+id/color_수선화"
+                android:id="@+id/color_Narcissus"
                 android:layout_height="80dp"
                 android:layout_width="80dp"
-                android:src="@drawable/수선화" />
+                android:src="@drawable/Narcissus" />
             <ImageView
-                android:id="@+id/color_바람꽃"
+                android:id="@+id/colo_WindFlower"
                 android:layout_height="80dp"
                 android:layout_width="80dp"
-                android:src="@drawable/바람꽃"/>
+                android:src="@drawable/WindFlower"/>
             <ImageView
-                android:id="@+id/color_알로카시아"
+                android:id="@+id/color_Alocasia"
                 android:layout_height="80dp"
                 android:layout_width="80dp"
-                android:src="@drawable/알로카시아" />
+                android:src="@drawable/Alocasia" />
         </TableRow>
 
         <TableRow
@@ -210,20 +210,20 @@
             android:layout_height="match_parent">
 
             <ImageView
-                android:id="@+id/color_율마"
+                android:id="@+id/color_Monterey_cypress"
                 android:layout_height="80dp"
                 android:layout_width="80dp"
-                android:src="@drawable/율마" />
+                android:src="@drawable/Monterey_cypress" />
             <ImageView
-                android:id="@+id/color_일일초"
+                android:id="@+id/color_Vinca"
                 android:layout_height="80dp"
                 android:layout_width="80dp"
-                android:src="@drawable/일일초"/>
+                android:src="@drawable/Vinca"/>
             <ImageView
-                android:id="@+id/color_임파첸스"
+                android:id="@+id/color_Sunpatiens"
                 android:layout_height="80dp"
                 android:layout_width="80dp"
-                android:src="@drawable/임파첸스" />
+                android:src="@drawable/Sunpatiens" />
         </TableRow>
 
         <TableRow
@@ -257,20 +257,20 @@
             android:layout_height="match_parent">
 
             <ImageView
-                android:id="@+id/color_한련화"
+                android:id="@+id/color_Tropaeolum_majus"
                 android:layout_height="80dp"
                 android:layout_width="80dp"
-                android:src="@drawable/한련화" />
+                android:src="@drawable/Tropaeolum_majus" />
             <ImageView
-                android:id="@+id/color_황칠나무"
+                android:id="@+id/color_Dendropanax"
                 android:layout_height="80dp"
                 android:layout_width="80dp"
-                android:src="@drawable/황칠나무"/>
+                android:src="@drawable/Dendropanax"/>
             <ImageView
-                android:id="@+id/color_히비스커스"
+                android:id="@+id/color_Hibiscus"
                 android:layout_height="80dp"
                 android:layout_width="80dp"
-                android:src="@drawable/히비스커스" />
+                android:src="@drawable/Hibiscus" />
         </TableRow>
 
         <TableRow
@@ -304,20 +304,20 @@
             android:layout_height="match_parent">
 
             <ImageView
-                android:id="@+id/color_히아신스"
+                android:id="@+id/color_Hyacinth"
                 android:layout_height="80dp"
                 android:layout_width="80dp"
-                android:src="@drawable/히아신스" />
+                android:src="@drawable/Hyacinth" />
             <ImageView
                 android:id="@+id/image1"
                 android:layout_height="80dp"
                 android:layout_width="80dp"
-                android:src="@drawable/황칠나무"/>
+                android:src="@drawable/Dendropanax"/>
             <ImageView
                 android:id="@+id/image2"
                 android:layout_height="80dp"
                 android:layout_width="80dp"
-                android:src="@drawable/히비스커스" />
+                android:src="@drawable/Hibiscus" />
         </TableRow>
 
         <TableRow
