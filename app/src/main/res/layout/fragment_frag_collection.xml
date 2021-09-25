@@ -68,7 +68,6 @@
             android:layout_height="match_parent">
 
             <ImageView
-                android:id="@+id/color_flower_giraffe"
                 android:layout_height="80dp"
                 android:layout_width="80dp"
                 android:src="@drawable/flower_giraffe" />
@@ -80,7 +79,7 @@
                 android:src="@drawable/morning_glory"/>
 
             <ImageView
-                android:id="@+id/color_Rudbeckia"
+                android:id="@+id/color_rudbeckia"
                 android:layout_height="80dp"
                 android:layout_width="80dp"
                 android:src="@drawable/rudbeckia" />
@@ -90,6 +89,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent">
             <Button
+                android:id="@+id/color_flower_giraffe"
                 android:text="꽃기린"
                 android:layout_height="30dp"
                 android:background="@drawable/coin_button"
