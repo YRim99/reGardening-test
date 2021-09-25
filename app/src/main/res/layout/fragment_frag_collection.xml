@@ -74,10 +74,11 @@
                 android:src="@drawable/flower_giraffe" />
 
             <ImageView
-                android:id="@+id/color_MorningGlory"
+                android:id="@+id/color_morningglory"
                 android:layout_height="80dp"
                 android:layout_width="80dp"
-                android:src="@drawable/morningGlory"/>
+                android:src="@drawable/morningglory"/>
+
             <ImageView
                 android:id="@+id/color_Rudbeckia"
                 android:layout_height="80dp"
@@ -124,7 +125,7 @@
                 android:id="@+id/color_AsterYomena"
                 android:layout_height="80dp"
                 android:layout_width="80dp"
-                android:src="@drawable/asterYomena"/>
+                android:src="@drawable/asteryomena"/>
             <ImageView
                 android:id="@+id/color_Monstera"
                 android:layout_height="80dp"
@@ -168,10 +169,10 @@
                 android:layout_width="80dp"
                 android:src="@drawable/narcissus" />
             <ImageView
-                android:id="@+id/colo_WindFlower"
+                android:id="@+id/colo_Windflower"
                 android:layout_height="80dp"
                 android:layout_width="80dp"
-                android:src="@drawable/windFlower"/>
+                android:src="@drawable/windflower"/>
             <ImageView
                 android:id="@+id/color_Alocasia"
                 android:layout_height="80dp"
